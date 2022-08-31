@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>header h1</h1>
+      <!-- can be used to navigate to different main elements with an id -->
+      <a href="#main-content"> skip to main content </a>
+    </header>
+    <!-- the main element should wrap the main content of a page -->
+    <!-- can be used by assistive navigation to easily skip to different contents of the page  -->
+    <main id="main-content" style="margin-top: 1000px">
+      <h1>main h1</h1>
+      <!-- article doesn't seem useful -->
+      <!-- according to w3schools, doesn't actually render anything special -->
+      <article>
+        <h1>article h1</h1>
+      </article>
+
+      <!-- The <div> element should be used only when no other semantic element (such as <article> or <nav>) is appropriate. -->
+      <div><h1>div h1</h1></div>
+
+      <!-- you can actually make a call with an a element, bonkers -->
+      <a href="tel:+1(555)5309">(555) 5309</a>
+      <button href="tel:+1(555)5309">another number</button>
+      <p>
+        <del>this text has been deleted</del>
+        <ins>and this text has been inserted</ins>. Here is the rest of the
+        paragraph
+      </p>
+    </main>
+    <!-- footer doesn't appear to have any special rendering -->
+    <footer>
+      <h1>footer h1</h1>
+    </footer>
+    <object
+      type="video/mp4"
+      data="https://www.youtube.com/watch?v=Sp9ZfSvpf7A"
+      width="1280"
+      height="720"
+    ></object>
+    <math>
+      <mrow>
+        <mrow>
+          <msup>
+            <mi>a</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <msup>
+            <mi>b</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+    </math>
+    <details open>
+      <summary>Details</summary>
+      Something small enough to escape casual notice.
+    </details>
+    <portal
+      style="width: 600px; height: 500px"
+      id="exampleportal"
+      src="https://damonholden.com/"
+    ></portal>
+  </body>
+</html>
